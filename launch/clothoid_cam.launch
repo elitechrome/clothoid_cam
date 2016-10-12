@@ -1,0 +1,35 @@
+<launch>
+
+	<node name="clothoid_left_cam" pkg="clothoid_cam" type="clothoid_cam_node" output="screen">
+
+	    	<param name="video_device" value="/dev/video1" />
+		<param name="camera_frame_id" value="left_cam" />
+		<param name="camera_name" value="left_cam" />
+
+	</node>
+
+	<node name="clothoid_right_cam" pkg="clothoid_cam" type="clothoid_cam_node" output="screen">
+
+	    	<param name="video_device" value="/dev/video2" />
+		<param name="camera_frame_id" value="right_cam" />
+		<param name="camera_name" value="right_cam" />
+
+	</node>
+
+	<node name="clothoid_bumper_cam" pkg="clothoid_cam" type="clothoid_cam_node" output="screen">
+
+	    	<param name="video_device" value="/dev/video5" />
+		<param name="camera_frame_id" value="bumper_cam" />
+		<param name="camera_name" value="bumper_cam" />
+
+	</node>
+
+	<node name="clothoid_upper_cam" pkg="clothoid_cam" type="clothoid_cam_node" output="screen">
+
+	    	<param name="video_device" value="/dev/video6" />
+		<param name="camera_frame_id" value="upper_cam" />
+		<param name="camera_name" value="upper_cam" />
+
+	</node>
+
+</launch> 
